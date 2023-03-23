@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title> 
+</head>
+<body>
+    <h1 style="color:white; font-family:'Times New Roman', Times, serif; font-size:xx-large;"><center>CADASTRO PESSOAL</center></h1>
+    <figure>
+        <center>
+            <img src="icone.png" width="175" height="175" alt="Icone de Cadastro" align="top">
+        </center>
+    </figure>
+    <br>
+    <br>
+    <form action="center" method="post">
+        <fieldset style="width: 75%; margin: 0px auto;">
+            <legend style="color:white;" >DADOS PESSOAIS</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="Nome" id="Nome">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="email">
+            <br>
+            <br>
+            <label for="nascimento">Nascimento:</label>
+            <input type="date" name="Nascimento" id="Nascimento" />
+            <br>
+            <br>
+            <label for="RG">RG:</label>
+            <input type="text" name="RG" id="RG">
+            <br>
+            <br>
+            <label for="CPF">CPF:</label>
+            <input type="text" name="CPF" id="CPF">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset style="width: 75%; margin: 0px auto;">
+            <legend style="color:white;">ENDEREÇO</legend>
+            <label for="Rua">Rua:</label>
+            <input type="text" name="Rua" id="Rua">
+            <label for="Numero">Número:</label>
+            <input type="text" name="Numero" id="Numero">
+            <br>
+            <br>
+            <label for="Bairro">Bairro:</label>
+            <input type="text" name="Bairro" id="Bairro" />
+            <br>
+            <br>
+            <label for="Estado">Estado:</label>
+            <select id="Estado" name="Estado">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br>
+            <br>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" name="Cidade" id="Cidade">
+            <br>
+            <br>
+            <label for="CEP">CEP:</label>
+            <input type="text" name="CEP" id="CEP">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset style="width: 75%; margin: 0px auto;">
+            <legend style="color:white;">LOGIN</legend>
+            <label for="Imagem do Perfil">Imagem do Perfil:</label>
+            <input type="file" accept="image/png,image/jpeg" name="Imagem do Perfil" id="Imagem do Perfil">
+            <br>
+            <br>
+            <label for="Login">Login de usuário:</label>
+            <input type="text" name="Login" id="Login">
+            <br>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" />
+            <br>
+            <br>
+            <label for="Confirme">Confirme a Senha:</label>
+            <input type="password" name="confirme" id="confirme">
+            <br>
+            <br>
+        </fieldset>
+        <center>
+        <input type="submit" value="Enviar" id="botaoEnviar">
+        <input type="reset" value="Limpar" id="botaoLimpar">
+        </center>
+    </form>
+</body>
+</html>
